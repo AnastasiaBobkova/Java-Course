@@ -12,7 +12,7 @@ public class SumOfNumInterval {
         } while (a < 0);
         int b;
         do {
-            System.out.print("Введите число b(b не должно быть больше a): ");
+            System.out.print("Введите число b(b не должно быть меньше a): ");
             b = in.nextInt();
         } while (b < 0 || b < a);
         int sum = 0;
