@@ -1,11 +1,11 @@
 package homeassignments.task11;
 
 public class RobotSapper implements RobotEngineer {
-    String model;
-    int power;
-    String chassisNumber;
-    String material;
-    boolean isOn;
+    private String model;
+    private int power;
+    private String chassisNumber;
+    private String material;
+    private boolean isOn;
 
     public RobotSapper(String model, int power, String chassisNumber, String material, boolean isOn) {
         this.model = model;

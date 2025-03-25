@@ -22,6 +22,6 @@ public class Garage <T extends Vehicle> {
     }
 
     Boolean isEntryPermitted () {
-        return vehicle.amountOfEmissions < 100;
+        return vehicle.getAmountOfEmissions() < 100;
     }
 }

@@ -10,13 +10,13 @@ public class Main {
         System.out.println("Въезд транспортного средства "
                 + garageForCar.getVehicleType()
                 + " "
-                + garageForCar.getVehicle().name
+                + garageForCar.getVehicle().getName()
                 + " разрешён? "
                 + garageForCar.isEntryPermitted());
         System.out.println("Въезд транспортного средства "
                 + garageForMoto.getVehicleType()
                 + " "
-                + garageForMoto.getVehicle().name
+                + garageForMoto.getVehicle().getName()
                 + " разрешён? "
                 + garageForMoto.isEntryPermitted());
     }

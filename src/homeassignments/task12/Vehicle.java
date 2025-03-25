@@ -1,8 +1,8 @@
 package homeassignments.task12;
 
 public class Vehicle {
-    String name;
-    int amountOfEmissions;
+    private String name;
+    private int amountOfEmissions;
 
     public Vehicle(String name, int amountOfEmissions) {
         this.name = name;

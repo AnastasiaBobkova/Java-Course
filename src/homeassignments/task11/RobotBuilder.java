@@ -1,12 +1,12 @@
 package homeassignments.task11;
 
 public class RobotBuilder implements RobotEngineer {
-    String model;
-    int power;
-    String producer;
-    String constructionUnit;
-    String material;
-    boolean isOn;
+    private String model;
+    private int power;
+    private String producer;
+    private String constructionUnit;
+    private String material;
+    private boolean isOn;
 
     public RobotBuilder(String model, int power, String producer, String constructionUnit, String material, boolean isOn) {
         this.model = model;
