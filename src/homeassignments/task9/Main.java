@@ -62,5 +62,14 @@ public class Main {
         zoo.deleteAnimal(idToDelete);
         System.out.println("\nЖивотные зоопарка после удаления животного с номером " + idToDelete+":");
         zoo.zooAnimalsInfo();
+
+        System.out.println("\nДемонстрация equals и hashCode.");
+
+        System.out.println("Сравним 2 собаки:");
+        System.out.println(dog1);
+        System.out.println(dog2);
+
+        System.out.println("Результат equals: " + dog2.equals(dog1));
+        System.out.println("hashCode-ы: " + dog1.hashCode() + " и " + dog2.hashCode());
     }
 }

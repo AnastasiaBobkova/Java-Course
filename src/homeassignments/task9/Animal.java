@@ -24,6 +24,18 @@ public class Animal {
         this.id = id;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public int getMaxLifespan() {
+        return maxLifespan;
+    }
+
+    public String getFoodType() {
+        return foodType;
+    }
+
     public String toString() {
         return("Номер: " + id
                 + ", Цвет: " + color

@@ -16,12 +16,44 @@ public class Dog extends Animal{
         this.avgWeight = avgWeight;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public double getAvgWeight() {
+        return avgWeight;
+    }
+
     public String toString() {
         return("Собака -> "
                 + super.toString()
                 + ", Имя: " + name
                 + ", Порода: " + breed
                 + ", Средний вес: " + avgWeight);
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj == null || obj.getClass() != this.getClass()) {
+            return false;
+        }
+        Dog dog = (Dog) obj;
+        return name.equals(dog.getName())
+                && breed.equals(dog.getBreed())
+                && avgWeight == dog.getAvgWeight()
+                && getColor().equals(dog.getColor())
+                && getMaxLifespan() == dog.getMaxLifespan()
+                && getFoodType().equals(dog.getFoodType());
+    }
+
+    public int hashCode () {
+        return getColor().hashCode() + getMaxLifespan() + getFoodType().hashCode() + name.hashCode() + breed.hashCode() + (int)avgWeight*10;
     }
 
     public void makeSound() {
