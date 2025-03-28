@@ -1,11 +1,11 @@
 package homeassignments.task11;
 
 public class RobotCook implements Robot {
-    String model;
-    int power;
-    String producer;
-    String cookMachine;
-    boolean isOn;
+    private String model;
+    private int power;
+    private String producer;
+    private String cookMachine;
+    private boolean isOn;
 
     public RobotCook(String model, int power, String producer, String cookMachine, boolean isOn) {
         this.model = model;
