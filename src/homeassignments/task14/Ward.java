@@ -85,7 +85,7 @@ public class Ward {
         }
     }
 
-    public boolean isWardFull() {
+    private boolean isWardFull() {
         return patients.size() == wardCapacity;
     }
 
